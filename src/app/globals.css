@@ -11,3 +11,7 @@
 .animate-scrollVertical {
   animation: scrollVertical 12s linear infinite;
 }
+html, body {
+  max-width: 100%;
+  overflow: hidden;
+}

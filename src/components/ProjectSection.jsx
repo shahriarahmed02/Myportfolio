@@ -34,7 +34,7 @@ export default function ProjectSection() {
         {/* Section Title */}
         <div className="text-center mb-12 px-6">
           <h2 className="text-4xl md:text-5xl font-black uppercase mb-3">
-            Featured <span className="text-[#00d2ff]">Projects</span>
+            Latest <span className="text-[#00d2ff]">Projects</span>
           </h2>
           <p className="text-slate-400 text-sm tracking-widest uppercase">
             Explore my latest work and applications
