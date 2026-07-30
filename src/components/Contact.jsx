@@ -74,8 +74,34 @@ export default function ContactSection() {
 
             {/* লিঙ্কডইন কার্ড (অ্যানিমেটেড ফিড সহ) */}
             <div className="bg-[#032030] border border-white/5 rounded-2xl overflow-hidden flex h-[280px] transition-all duration-300 hover:-translate-y-2 hover:border-[#00d2ff] hover:shadow-[0_10px_30px_rgba(0,210,255,0.1)]">
+              
+              {/* বাম পাশের অ্যানিমেটেড স্ক্রোলিং ফিড */}
               <div className="relative w-1/2 h-full bg-[#010c15] overflow-hidden border-r border-white/5">
-                <div className="space-y-3 p-3 animate-[scrollVertical_12s_linear_infinite] hover:[animation-play-state:paused]">
+                
+                <div className="space-y-3 p-3 animate-scrollVertical hover:[animation-play-state:paused]">
+                  {/* প্রথমবার লিস্ট */}
+                  <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
+                    <p className="text-[#00d2ff] font-bold">New Post 🚀</p>
+                    <p className="text-gray-400">Building a MERN Stack Dream-11 app...</p>
+                  </div>
+                  <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
+                    <p className="text-[#00d2ff] font-bold">Web Dev 💻</p>
+                    <p className="text-gray-400">Tailwind CSS v4 is a game changer!</p>
+                  </div>
+                  <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
+                    <p className="text-[#00d2ff] font-bold">Milestone 🏆</p>
+                    <p className="text-gray-400">5+ Professional Projects completed.</p>
+                  </div>
+                  <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
+                    <p className="text-[#00d2ff] font-bold">Shahriar Ahmed</p>
+                    <p className="text-gray-400">Day 8 of #100DaysOfCode Building with Real Data! 🚀</p>
+                  </div>
+                  <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
+                    <p className="text-[#00d2ff] font-bold">Shahriar Ahmed</p>
+                    <p className="text-gray-400">Learning react....</p>
+                  </div>
+
+                  {/* লুপ স্মুথ রাখার জন্য সেইম লিস্ট আবার ডুপ্লিকেট করা হলো */}
                   <div className="bg-white/5 p-2 rounded-md text-[9px] border border-white/10">
                     <p className="text-[#00d2ff] font-bold">New Post 🚀</p>
                     <p className="text-gray-400">Building a MERN Stack Dream-11 app...</p>
@@ -97,8 +123,13 @@ export default function ContactSection() {
                     <p className="text-gray-400">Learning react....</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#032030] via-transparent to-[#032030]" />
+
+                {/* উপরে ও নিচে ফেড/শ্যাডো ইফেক্ট */}
+                <div className="absolute inset-x-0 top-0 h-10 pointer-events-none bg-gradient-to-b from-[#010c15] to-transparent z-10" />
+                <div className="absolute inset-x-0 bottom-0 h-10 pointer-events-none bg-gradient-to-t from-[#010c15] to-transparent z-10" />
               </div>
+
+              {/* ডান পাশের লিঙ্কডইন প্রফাইল ইনফো */}
               <div className="w-1/2 flex flex-col items-center justify-center p-4 bg-[#032030] text-center">
                 <div className="w-12 h-12 bg-[#00d2ff]/10 text-[#00d2ff] rounded-xl flex items-center justify-center text-xl mb-2">
                   <FaLinkedinIn />
@@ -113,6 +144,7 @@ export default function ContactSection() {
                   View Profile <FaExternalLinkAlt className="text-[8px]" />
                 </a>
               </div>
+
             </div>
 
             {/* লোকেশন কার্ড */}

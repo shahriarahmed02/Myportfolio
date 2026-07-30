@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scrollVertical {
+  animation: scrollVertical 12s linear infinite;
+}
