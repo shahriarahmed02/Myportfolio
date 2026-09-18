@@ -1,5 +1,22 @@
 export const projectsData = [
   {
+    id: "arthub",
+    title: "ArtHub",
+    subtitle: "Online Art Marketplace",
+    description: "Full-stack digital art marketplace built with Next.js, Tailwind CSS, and Express.js, featuring role-based dashboards, Stripe payments, secure JWT authentication, and interactive art discovery.",
+    coverImage: "/images/arthub-d-3.png",
+    images: [
+      "/images/arthub-d-1.png",
+      "/images/arthub-d-2.png",
+      "/images/arthub-d-3.png",
+      "/images/arthub-d-4.png",
+      
+    ],
+    techStack: ["Next.js", "Express.js", "MongoDB", "React", "Stripe API", "Tailwind CSS", "DaisyUI"],
+    liveDemo: "https://arthub-eta.vercel.app",
+    github: "https://github.com/shahriarahmed02/arthub-client"
+  },
+  {
     id: "studynook",
     title: "StudyNook",
     subtitle: "Booking Platform",
